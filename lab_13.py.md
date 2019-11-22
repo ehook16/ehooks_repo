@@ -28,11 +28,11 @@
 
 		def deliver(self, zip_list):
 			#if zip codes covered in list, remove zip code and print zip code
-			# for i in zip_list:
-			# 	if(i in self.zip_codes_covered):
-			# 		zip_list.remove(i)
-			# 	else:
-			# 		return(i)
+			for i in zip_list:
+			 	if(i in self.zip_codes_covered):
+					zip_list.remove(i)
+				else:
+			 		return(i)
 
 			delivered_already = [i for i in zip_list if i in self.zip_codes_covered]
 			print(delivered_already)
